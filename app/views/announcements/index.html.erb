@@ -1,0 +1,7 @@
+<h1>Announcements</h1>
+<% @announcements.each do |announcement| %>
+  <span><%= announcement.key %></span>
+  <span><%= link_to "Show", announcement_path(announcement) %></span>
+  <span><%= link_to "Edit", edit_announcement_path(announcement.key) %></span>
+<% end %>
+<%= link_to "New announcement", new_announcement_path %>

@@ -1,0 +1,6 @@
+<h1>Edit Announcement</h1>
+
+<%= form_for @announcement, class: "edit-announcement-form" do |f| %>
+  <%= render partial: "form", locals: {f: f} %>
+  <%= f.submit %>
+<% end %>
