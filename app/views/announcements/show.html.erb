@@ -1,8 +1,3 @@
-<div class='announcement' style="color:<%= @announcement.foreground %>;background:<%= @announcement.background %>">
-  <div class='content'>
-    <%= @announcement.content%>
-  </div>
-  <div class='marquee'>
-    <%= @announcement.marquee%>
-  </div>
+<div class='announcement-container'>
+  <%= render @announcement %>
 </div>
