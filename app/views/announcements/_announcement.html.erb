@@ -1,8 +1,8 @@
-<div class='announcement' style="color:<%= @announcement.foreground %>;background:<%= @announcement.background %>">
+<div class='announcement' style="color:<%= announcement.foreground %>;background:<%= announcement.background %>">
   <div class='content'>
-    <%= @announcement.content%>
+    <%= simple_format(announcement.content) %>
   </div>
-  <div class='marquee'>
-    <%= @announcement.marquee%>
-  </div>
+  <marquee class='marquee'>
+    <%= announcement.marquee%>
+  </marquee>
 </div>
