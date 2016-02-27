@@ -1,24 +1,17 @@
-## README
+# Setup
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+1. `$ bundle install`
+2. `$ rails db:create && rails db:migrate`
 
-Things you may want to cover:
+# Usage
 
-* Ruby version
+1. Run the server with `rails s`
+2. Open http://localhost:3000/announcements/new¬
+3. Fill up announcement details (for now lets set the key to 'company')
+4. Submit the form, it would be directed to the announcment show page¬
+5. Open http://localhost:3000/announcements/company/edit in another tab
+6. When we submit the edit form, the previous tab gets updated!
 
-* System dependencies
+Here's how it would look like:
+![Final output](https://drive.google.com/uc?export=view&id=0BzzUFuhnnJrWTlJUUHVSbU9RTzQ)¬
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
